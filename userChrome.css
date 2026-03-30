@@ -1,0 +1,172 @@
+
+:root{
+  --uc-tabs-width: 31vw;
+  --uc-toolbar-height: 34px;
+}
+.titlebar-placeholder:not([type="pre-tabs"]){ display: none }
+#TabsToolbar,#nav-bar{ height:var(--uc-toolbar-height) !important; }
+#TabsToolbar{ margin-right: calc(39vw - var(--uc-tabs-width)) }
+#nav-bar{
+  margin-left: var(--uc-tabs-width);
+  margin-top: calc(var(--uc-toolbar-height) * -1);
+  margin-right: 01px;
+}
+ .tabbrowser-tab[fadein]:not([pinned]) {
+        min-width: 58px !important;
+        max-width: 58px !important;
+    }
+
+#page-action-buttons {
+    display: none !important;
+}
+#nav-bar {
+    border: none !important;
+    box-shadow: none !important;
+}
+#urlbar-container{
+     min-height: 30px !important;
+     max-height: 39px !important;
+     max-width: 355px !important;
+     min-width: 355px !important;}
+#tabbrowser-tabs[orient="horizontal"] tab-split-view-wrapper {
+  flex: unset !important;
+  min-width: unset !important;
+}
+.tab-line { display: none !important; }
+
+  .tabbrowser -tab[fade in]:not([pinned])
+        min-width: 55px !important;
+        max-width: 55px !important;
+    }
+
+#appcontent statuspanel{display: none;} 
+.tabbrowser-tab { text-shadow: none !important; }
+.tab-label-container {
+  display: none;
+}
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+.tabbrowser-tab :-moz-any(.tab-icon-sound,.tab-icon-overlay[muted]) {
+    display: none;
+}
+#statuspanel{ display: none !important }
+#nav-bar {
+
+background-color:#c1c1c1	!important;
+
+}
+:root {--tab-min-height: 29px !important;}
+
+
+
+
+
+
+
+#urlbar-background  {
+border: 1px solid var(--chrome-content-separator-color) !important;
+}
+
+
+#widget-overflow-list .toolbarbutton-icon {
+    display: none;
+}
+
+@keyframes rotatingBookmarkIcon {
+  0% { transform: rotateY(0deg); }
+  50% { transform: rotateY(180deg); }
+  100% { transform: rotateY(0deg); }
+}
+
+#PlacesToolbarItems > .bookmark-item:hover > .toolbarbutton-icon {
+  animation-name: rotatingBookmarkIcon !important;
+  animation-duration: 1s !important;
+}
+#back-button,#forward-button{ list-style-image: url("chrome://devtools/skin/images/play.svg") !important; }
+#back-button > .toolbarbutton-icon{ transform: scaleX(-1) }
+
+:root {
+  --toolbar-field-background-color: #D5D5AC !important;
+  --toolbar-field-focus-background-color: #D5D5AC!important;
+}
+
+#navigator-toolbox {
+--lwt-tabs-border-color: transparent !important; }
+#tabbrowser-tabs {
+--lwt-tab-line-color: transparent !important; }
+
+
+
+@-moz-document url("chrome://global/content/alerts/alert.xhtml") {
+  :root{
+    font-size: 15px !important;
+  } 
+
+
+}
+
+
+:root{ 
+--toolbarbutton-inner-padding: 5px !important; 
+}
+
+
+
+
+.tabbrowser-tab:not([pinned]):not(:hover) .tab-close-button { visibility: collapse !important; }
+
+.tabbrowser-tab:not([pinned]):hover .tab-close-button { visibility: visible !important; display: block !important; }
+#nav-bar:not(:hover, [customizing]) toolbarbutton {
+opacity: 0 !important;
+}
+
+#urlbar-background,
+#urlbar-input-container {
+  --toolbarbutton-border-radius: calc(var(--urlbar-min-height) / 1);
+}
+
+#urlbar-input-container {
+  --urlbar-icon-border-radius: calc(var(--toolbarbutton-border-radius) - 1px);
+}
+
+
+ 
+@media (-moz-platform: windows) {
+    /* discard new titlebar buttons */
+    .titlebar-button { &::before { display: none !important; } }
+}
+
+#urlbar {font-size: 1.3em !important; }
+
+.titlebar-button {
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  background-position: center;
+  list-style-image: none !important;
+  background-color: transparent !important; 
+  opacity: 1.0;   /* original uses opacity: 0.7 when button container not hovered */
+  padding-inline: 16.5px !important;   /* rule added to adjust button spacing */
+}
+.titlebar-button:hover {
+  opacity: 1;
+}
+.titlebar-min {
+  background-image: radial-gradient(#FFFF00 55%,transparent 65%);
+} 
+.titlebar-restore, .titlebar-max {
+  background-image: radial-gradient(#00CA4E 55%,transparent 65%);
+}
+.titlebar-close {
+  background-image: radial-gradient(#D22B2B 55%,transparent 65%);
+}
+
+#nav-bar .titlebar-buttonbox-container { display: flex !important; }
+@-moz-document domain("youtube.com") {
+  html.fullscreen video:hover {
+    cursor: none !important;
+  }
+
+  html.fullscreen {
+    cursor: none !important;
+  }
+
+
